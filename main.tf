@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0cdbd57e40d4eec18"
-  instance_type = "t2.small"
+  instance_type = "t2.large"
 
   tags = {
     Name = "stable-diffusion-server0"
